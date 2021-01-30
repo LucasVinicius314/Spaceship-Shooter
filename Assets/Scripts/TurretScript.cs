@@ -32,7 +32,6 @@ public class TurretScript : MonoBehaviour
   Vector3 lastTargetPos = Vector3.zero;
   Vector3 newDirection = Vector3.zero;
   bool isShooting = false;
-  float leadIndex = 1f;
 
   void Start()
   {

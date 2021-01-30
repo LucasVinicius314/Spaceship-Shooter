@@ -9,14 +9,14 @@ public class ProjectileScript : MonoBehaviour
     StartCoroutine(Despawn());
   }
 
-  IEnumerator Despawn()
+  void OnCollisionEnter2D(Collision2D collision)
   {
-    yield return new WaitForSeconds(10f);
     Destroy(gameObject);
   }
 
-  void OnCollisionEnter2D(Collision2D collision)
+  IEnumerator Despawn()
   {
+    yield return new WaitForSeconds(10f);
     Destroy(gameObject);
   }
 }
